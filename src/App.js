@@ -9,7 +9,7 @@ function App() {
   const [loading, setLoading]= useState(true);
   const getData = () => {
     axios
-      .get("https://api.covid19india.org/data.json")
+      .get("https://data.covid19india.org/data.json")
       .then((res) => res.data)
       .then((res) => {
         setCases(res["cases_time_series"]);
